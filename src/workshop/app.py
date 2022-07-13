@@ -7,12 +7,6 @@ app = FastAPI()
 app.include_router(router)
 
 
-@app.get('/')
-def root():
-    return {'message': 'hello'}
-
-
-
 if __name__ == '__main__':
     from settings import settings
 
